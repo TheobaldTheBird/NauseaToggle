@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "nauseatoggle",
+  "version": "${version}",
+  "name": "NauseaToggle",
+  "description": "",
+  "authors": [],
+  "contact": {
+    "repo": "https://github.com/Theobald/NauseaToggle"
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "assets/nauseatoggle/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "theobald.nauseatoggle.NauseaToggleClient"
+    ],
+    "main": [
+      "theobald.nauseatoggle.NauseaToggle"
+    ]
+  },
+  "mixins": [
+    "nauseatoggle.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
